@@ -46,6 +46,7 @@ implements ClassGenerator
     private NamingPolicy namingPolicy = DefaultNamingPolicy.INSTANCE;
     private Source source;
     private ClassLoader classLoader;
+    private Class contextClass;
     private String namePrefix;
     private Object key;
     private boolean useCache = DEFAULT_USE_CACHE;
@@ -168,6 +169,10 @@ implements ClassGenerator
      */
     public void setClassLoader(ClassLoader classLoader) {
         this.classLoader = classLoader;
+    }
+
+    public void setContextClass(Class contextClass) {
+        this.contextClass = contextClass;
     }
 
     /**
@@ -333,11 +338,7 @@ implements ClassGenerator
             String className = ClassNameReader.getClassName(new ClassReader(b));
             ProtectionDomain protectionDomain = getProtectionDomain();
             synchronized (classLoader) { // just in case
-                if (protectionDomain == null) {
-                    gen = ReflectUtils.defineClass(className, b, classLoader);
-                } else {
-                    gen = ReflectUtils.defineClass(className, b, classLoader, protectionDomain);
-                }
+                gen = ReflectUtils.defineClass(className, b, classLoader, protectionDomain, contextClass);
             }
             return gen;
         } catch (RuntimeException e) {

@@ -114,6 +114,7 @@ public class MethodProxy {
     private static FastClass helper(CreateInfo ci, Class type) {
         FastClass.Generator g = new FastClass.Generator();
         g.setType(type);
+        g.setContextClass(type);
         g.setClassLoader(ci.c2.getClassLoader());
         g.setNamingPolicy(ci.namingPolicy);
         g.setStrategy(ci.strategy);

@@ -161,6 +161,7 @@ abstract public class KeyFactory {
                                     List<KeyFactoryCustomizer> next) {
         Generator gen = new Generator();
         gen.setInterface(keyInterface);
+        gen.setContextClass(keyInterface);
 
         if (customizer != null) {
             gen.addCustomizer(customizer);
