@@ -6,8 +6,8 @@
     <!-- ====================================================================== -->
     <parent>
         <artifactId>cglib-parent</artifactId>
-        <groupId>cglib</groupId>
-        <version>3.3.1-SNAPSHOT</version>
+        <groupId>xyz.jieee</groupId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -25,7 +25,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>cglib</groupId>
+            <groupId>xyz.jieee</groupId>
             <artifactId>cglib-sample</artifactId>
         </dependency>
 

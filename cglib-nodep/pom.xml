@@ -7,9 +7,9 @@
     <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>cglib</groupId>
+        <groupId>xyz.jieee</groupId>
         <artifactId>cglib-parent</artifactId>
-        <version>3.3.1-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <!-- ====================================================================== -->
