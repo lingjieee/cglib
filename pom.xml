@@ -18,18 +18,18 @@
     <packaging>pom</packaging>
 
     <name>Code Generation Library</name>
-    <url>https://github.com/cglib/cglib</url>
+    <url>https://github.com/lingjieee/cglib</url>
     <description>cglib is a powerful, high performance and quality Code Generation Library, It is used to extend JAVA classes and implements interfaces at runtime.</description>
 
     <scm>
-        <connection>scm:git:git://github.com/cglib/cglib.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/cglib/cglib.git</developerConnection>
-        <url>https://github.com/cglib/cglib</url>
+        <connection>scm:git:git://github.com/lingjieee/cglib.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/lingjieee/cglib.git</developerConnection>
+        <url>https://github.com/lingjieee/cglib</url>
     </scm>
 
     <issueManagement>
         <system>Github Issues</system>
-        <url>https://github.com/cglib/cglib/issues</url>
+        <url>https://github.com/lingjieee/cglib/issues</url>
     </issueManagement>
 
     <ciManagement>
