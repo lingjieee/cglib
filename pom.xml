@@ -97,8 +97,8 @@
                 <jdk>[1.9,)</jdk>
             </activation>
             <properties>
-                <java.version.source>1.6</java.version.source>
-                <java.version.target>1.6</java.version.target>
+                <java.version.source>1.9</java.version.source>
+                <java.version.target>1.9</java.version.target>
                 <java.test.compiler.argument>-parameters</java.test.compiler.argument>
             </properties>
         </profile>
